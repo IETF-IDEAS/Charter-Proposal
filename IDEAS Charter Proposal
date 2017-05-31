@@ -1,0 +1,57 @@
+IDEAS
+Acronym for: “IDentity EnAbled networkS” 
+
+Proposed Charter
+
+Identity-enabled solutions and applications are increasingly being considered to support mobility solutions and multi-homing across heterogeneous access networks. Likewise, Internet of Things (IOT), Machine-to-Machine (M2M) and 5G services, as well as context aware applications all can take advantage of discovery, stricter privacy and security functions. 
+
+Identifier-locator separation protocols are examples of technology that require infrastructure that allows nodes to discover the network topological location(s) of its peer(s) for packet delivery.  However, additional infrastructure is needed to address new requirements that go well beyond the traditional discovery service and mapping of identifier-to-location for packet delivery.  
+
+
+Examples of such requirements are:
+-   Privacy:  The use of long-lived and public identifiers may be desirable for looking up a peer, however it causes privacy issues as well. Indeed, the identifier-location pairs can be looked up without restriction and flows can be pinned by anybody to specific end systems. 
+-   Security: An identifier may reveal information to which the end-users may not want to be associated with. Therefore, users and network elements may wish to have a certain degree of control over this information to define who can read, write and delete it. The endpoint communications should be able to change their identifier while retaining their identity and associated policies. This indirection should help discourage unsolicited traffic or conceal their sensitive information to eavesdroppers. 
+-  Interoperability across id-locator infrastructures: In IoT, often technology specific solutions drive different naming and addressing scheme leading to deploying disjoint systems. However, several IoT and 5G scenarios require that identifier-locator infrastructures are able to interoperate and exchange information when deployed over different administrative domains.  
+ -   Low Latency: The infrastructures must strive to minimize the latency for mission critical applications as well as quality user experience 
+
+The Identity Enabled Networks (IDEAS) working group is chartered to develop a framework that provides services that can be used to address those requirements and that can be used with any identity-based protocol. The framework includes the identifier-locator infrastructure and a common control plane for identifier related services and identifier–location separation protocols. A common control plane is required to facilitate the dynamic discovery of the various naming/addressing schemes and the communication between these heterogeneous environments
+Such communication may also imply some negotiation capabilities, e.g., when several Mapping Systems are managed by different entities. 
+
+Specifically, the IDEAS WG is chartered to work on these areas for the framework:
+
+Features and properties:
+- Registration and lifecycle management of identities associated identifiers.
+- Definition of policies related to identities (e.g. access control to discovery)        
+- Anonymization support (e.g. identifier anonymity to eavesdroppers)
+- Authenticated identity (access to framework, update of information for identifiers) 
+- Definition and enforcement of policies (e.g. ability to look up an identifier-locator pair, permit forwarding traffic, …)
+- Identifier/locator mapping and resolution (e.g. discovery, pub/sub, multihoming..)
+- Metadata support (e.g. entity or endpoint attributes and properties). 
+- Endpoint grouping support (e.g. negotiation to join, leave and communicate)
+- Robustness of the system against DDoS attacks (e.g. policies for access, rate limiting)
+
+The scope of system should be flexible and allow for different scopes such as local(private) or global(public). The scope of the mappings and their relevance within the scope will be taken into consideration for leaking of information. The negotiation of leaking of information from the private to global systems will be covered with the aim of minimal disruption and minimizing latency.
+
+The working group will balance the requirements for performance of the framework to provide secured, trustworthy, and robust communication services with the minimized storage of data and privacy considerations. The method for updating, caching and dissemination or leaking of information will be covered to ensure that state consistency and efficiency.
+
+The working group will cover the management aspects of IDEAS architectural components and the services that they provide. The working group will identify gaps and make recommendations on changes needed for interface interactions between the framework and identifier-enabled protocols
+
+The IDEAS WG will collaborate with other Working Groups to ensure interoperability with LISP, HIP, ILA and other relevant work . Furthermore, it will try to reuse technologies already developed when appropriate.
+
+WG deliverables include:
+Overall Identity Services Framework 
+
+WG sustaining/informational documents may include:
+
+These documents may not necessarily be published, but may be
+maintained in a draft form or on a collaborative Working Group wiki
+to support the efforts of the Working Group and help new comers:
+-Problem statement 
+-Use cases
+-Requirements
+- Applications of the architecture for use cases
+
+Milestones 
+Dec 2017 Adopt WG draft for the Identity Services framework
+May 2018 WGLC for the Identity Services framework
+August 2018 Send
