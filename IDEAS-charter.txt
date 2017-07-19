@@ -1,0 +1,97 @@
+IDEAS
+	Acronym for: IDentity EnAbled networkS
+
+	Proposed Charter
+
+Network solutions based on the concept of Identifier/Locator separation
+are increasingly considered to support mobility and multi-homing across
+heterogeneous access networks. At the same time, end users require
+greater privacy for their networking information and protection
+from outside threats, while operators demand greater operational
+efficiency. Identity-enabled networks aim to enable networking
+applications and services that provide a high degree of privacy and
+control of end points over their networking data, coupled with greater
+inherent security than provided by today's networks.
+
+In order to address those challenges, identity-enabled networks introduce
+the concept of identity-identifier split. This split lets networks
+provide communication services for endpoints regardless of the particular
+identifier used at any particular point in time. This requires a set
+of services, referred to as Generic Identity Services. Those services
+allow to: (1) manage the lifecycle of identities and identifiers,
+(2) manage mappings between identities and identifiers in addition to
+mappings between identifiers and locators, and (3) access to a range
+of value-added services such as the articulation of basic communication
+policies that are based on the concept of identity.
+
+The provided identity services need to enable network solutions
+that address a range of requirements, such as: 
+- Privacy: The use of long-lived and public identifiers may be
+desirable for finding a peer, however they cause privacy issues. Indeed,
+when identifier-location pairs can be looked up without restriction,
+flows can be pinned by anybody to specific end systems. The endpoint
+communications should be able to change their identifier while retaining
+their identity and associated policies. This indirection should help
+discourage undesired traffic and conceal sensitive network information
+of end devices to eavesdroppers.
+- Common infrastructure and Primitives: The application of common and
+consistent basic networking policies that can apply at the level of
+identity reduces operational complexity associate with managing services
+for individual endpoint. Likewise, mapping services and infrastructure
+that apply to identity-identifier as well as identifier-locator mappings
+reduces operational and deployment complexity.
+
+The Identity Enabled Networks (IDEAS) working group is chartered
+to develop a set of definitions, interfaces, and data models that
+can be used to address those requirements and that can be used with
+identifier-based protocols. We refer to the set of services as Generic
+Identity Services (GRIDS). GRIDS provides common services to enable
+identity-enabled networks, such as services for identity and identifier
+lifecycle management, mapping services, and tie-in with identity-based
+policy management and enforcement.
+
+The working group will identify gaps and make recommendations on
+changes needed for interface interactions between the framework and
+identifier-enabled protocols. As far as possible, existing technologies
+are leveraged to provide and to access those services.
+
+The IDEAS WG is chartered to work on the following items for
+Identity-Enabled Networks:
+
+- Registration and lifecycle management of identities and their associated
+identifiers.  
+- Identity authentication and authorization (access
+to framework, update of information for identifiers, using existing
+IETF-defined authentication methods and protocols) 
+- Identifier/locator mapping and resolution (e.g. discovery, pub/sub, multihoming..)  -
+Definition and enforcement of basic networking policies (e.g. ability
+to look up an identifier-locator pair, permit forwarding traffic for
+particular endpoints on a per-identity basisÉ)
+
+The IDEAS WG will collaborate with other Working Groups to ensure
+interoperability with LISP, HIP, ILA and other relevant work. Furthermore,
+it will try to reuse technologies already developed when appropriate.
+
+WG deliverables include: 
+* Protocol, Data Model for Generic Identity Services, providing the following functions 
+    o Identity and Identifier Lifecycle Management (including authentication, 
+    registration, allocation, etc.; existing IETF authentication methods will be leveraged) 
+    o Identity-Identifier Mapping and Association 
+    o Network identity policy and metadata (leveraging other frameworks as appropriate) 
+    o Definition of primitives for interworking with identifier-location split protocols 
+* Protocol for inter-GRIDS communication
+
+Milestones
+	Milestone 1 (initial):
+		Protocol, Data Model, Interface for Generic Identity
+		Services
+
+	Target Dates:
+		WG Draft Adoption Ð December 2017 Submit to IESG for
+		consideration as proposed standardÐ December 2018
+
+	Milestone 2 (future Ð after rechartering):
+		Inter-Grids Communications
+
+
+
